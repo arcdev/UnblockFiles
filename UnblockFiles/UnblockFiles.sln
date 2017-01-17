@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lib", "Lib\Lib.csproj", "{B492385D-C478-4C05-979A-7CCD64F4C21F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests.Lib", "Tests.Lib\Tests.Lib.csproj", "{C9BCD908-59B7-4FD8-B358-2993F7B8A50D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeZoner", "DeZoner\DeZoner.csproj", "{6F437072-7433-4588-8431-8BFA3BD3FA32}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B492385D-C478-4C05-979A-7CCD64F4C21F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B492385D-C478-4C05-979A-7CCD64F4C21F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B492385D-C478-4C05-979A-7CCD64F4C21F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B492385D-C478-4C05-979A-7CCD64F4C21F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9BCD908-59B7-4FD8-B358-2993F7B8A50D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9BCD908-59B7-4FD8-B358-2993F7B8A50D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9BCD908-59B7-4FD8-B358-2993F7B8A50D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9BCD908-59B7-4FD8-B358-2993F7B8A50D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F437072-7433-4588-8431-8BFA3BD3FA32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F437072-7433-4588-8431-8BFA3BD3FA32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F437072-7433-4588-8431-8BFA3BD3FA32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F437072-7433-4588-8431-8BFA3BD3FA32}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
