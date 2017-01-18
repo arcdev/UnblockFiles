@@ -7,8 +7,6 @@ namespace Lib
 {
 	public static class ZoneHelper
 	{
-
-
 		public static string GetZone(string filename)
 		{
 			IPersistFile persistFile = null;
@@ -49,20 +47,23 @@ namespace Lib
 				}
 			}
 		}
+
 		public static void Remove(string filename)
 		{
 			IPersistFile persistFile = null;
 			IZoneIdentifier zoneId = null;
 			try
 			{
-				persistFile = (IPersistFile)new PersistentZoneIdentifier();
+				// need to cast because we can't directly implement the interface in C# code
+				persistFile = (IPersistFile) new PersistentZoneIdentifier();
 				const int mode = (int) (STGM.READWRITE | STGM.SHARE_EXCLUSIVE);
 
 				URLZONE zone;
 				try
 				{
 					persistFile.Load(filename, mode);
-					zoneId = (IZoneIdentifier)persistFile;
+					// need to cast because we can't directly implement the interface in C# code
+					zoneId = (IZoneIdentifier) persistFile;
 					var getIdResult = zoneId.GetId(out zone);
 				}
 				catch (FileNotFoundException)
@@ -79,13 +80,14 @@ namespace Lib
 					return;
 				}
 
-				//persistZoneId.SetId(URLZONE.LOCAL_MACHINE);
 				var removeResult = zoneId.Remove();
 
 				persistFile.Save(filename, true);
 			}
 			finally
 			{
+				// don't forget to release the COM objects
+
 				if (persistFile != null)
 				{
 					Marshal.ReleaseComObject(persistFile);

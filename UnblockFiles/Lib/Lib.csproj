@@ -40,10 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IPersistentZoneIdentifier.cs" />
     <Compile Include="ZoneHelper.cs" />
     <Compile Include="ZoneIdentifier.cs" />
-    <Compile Include="IPersistFile.cs" />
     <Compile Include="IZoneIdentifier.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="STGM.cs" />

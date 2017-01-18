@@ -1,4 +1,7 @@
 ﻿// ReSharper disable InconsistentNaming
+
+using System;
+
 namespace Lib
 {
 	/// <summary>
@@ -7,6 +10,7 @@ namespace Lib
 	/// Use a flag from the creation group when creating an object, such as with StgCreateStorageEx or IStorage::CreateStream.
 	/// </summary>
 	/// <a href="https://msdn.microsoft.com/en-us/library/aa380337(v=vs.85).aspx">source</a>
+	[Flags]
 	public enum STGM : long
 	{
 		//Access	
